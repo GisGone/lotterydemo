@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raffledemo.MainActivity">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_above="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:text="奖品1"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv1"/>
+        <TextView
+            android:text="奖品2"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv2"/>
+        <TextView
+            android:text="奖品3"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv3"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:text="奖品8"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv8"/>
+        <TextView
+            android:textSize="20sp"
+            android:text="开始抽奖"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tvStart"/>
+        <TextView
+            android:text="奖品4"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:text="奖品7"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv7"/>
+        <TextView
+            android:text="奖品6"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv6"/>
+        <TextView
+            android:text="奖品5"
+            style="@style/TextViewLuckDraw"
+            android:id="@+id/tv5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_purple"
+        android:layout_below="@+id/layout3"
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
